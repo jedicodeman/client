@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://webdserver.herokuapp.com/teacher" });
+const API = axios.create({ baseURL: "https://webdserver.herokuapp.com/api/teacher" });
 
 API.interceptors.request.use((req) => {
   const locallyStored = JSON.parse(localStorage.getItem("profile"));
